@@ -12,17 +12,17 @@
 # ║                                                                      ║
 # ║  Change it to "portfolio" once you have filled in your details.      ║
 # ╚══════════════════════════════════════════════════════════════════════╝
-siteMode: "landing"   # ← CHANGE THIS to "portfolio"
-siteUrl:  "https://yourusername.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
-showPoweredBy: false  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
+siteMode: "portfolio"   # ← CHANGE THIS to "portfolio"
+siteUrl:  "https://blaistof.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
+showPoweredBy: true  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
 
 # ── Identity ───────────────────────────────────────────── (required) ──
-name: "Git Vitae"              # Your name — shown in the header and used as a fallback in the avatar
-title: "Portfolio-Resume Engineer"
-tagline: "I build free portfolios and resumes for everyone."
-email: "git-vitae@proton.me"
+name: "@blaistof"              # Your name — shown in the header and used as a fallback in the avatar
+title: "Systems Scripter"
+tagline: "I build systems"
+email: "unactve@gmail.com"
 phone: ""                    # Optional — e.g. "+1 (555) 000-1234". Shown in contact section and resume.
-location: "San Francisco, CA"
+location: ""
 avatarUrl: "https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alex&mouth[]=wideSmile&radius=12"  # Demo avatar — replace with your own photo URL (see instructions below)
 # How to add a profile photo (free, no extra account needed):
 #   1. Go to your GitHub repo → click "Add file" → "Upload files"
@@ -50,14 +50,14 @@ openToWork: true         # Shows "Open to Opportunities" banner when true
 
 # ── Theme ──────────────────────────────────────────────────────────────
 defaultTheme: "system"   # Options: light | dark | system
-colorPreset: "indigo"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
+colorPreset: "emerald"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
 # primaryColor: "#6366f1" # Optional — pick any colour you like and paste its hex code here.
                            # Overrides colorPreset above. To find a hex code:
                            #   → Google "colour picker", pick a colour, copy the 6-digit code (e.g. #e11d48)
                            #   → or grab one from coolors.co / your favourite site's colour
 
 resumeTheme:
-  twoColumn: "indigo"    # Accent color for the two-column resume layout
+  twoColumn: "emerald"    # Accent color for the two-column resume layout
   classic: "emerald"     # Accent color for the classic resume layout
 
 contactFormEndpoint: ""  # Optional — paste a Formspree URL (https://formspree.io/f/xxxx)
@@ -69,30 +69,30 @@ contactFormEndpoint: ""  # Optional — paste a Formspree URL (https://formspree
 sections:
   - { id: about,          show: true  }
   - { id: stats,          show: false }  # Stats already appear as cards in the About section above — enable this only if you want a dedicated full-width stats section
-  - { id: skills,         show: true  }
-  - { id: languages,      show: true  }
+  - { id: skills,         show: false  }
+  - { id: languages,      show: false  }
   - { id: experience,     show: true  }
   - { id: projects,       show: true  }
-  - { id: education,      show: true  }
-  - { id: certifications, show: true  }
+  - { id: education,      show: false  }
+  - { id: certifications, show: false  }
   - { id: publications,   show: false }
-  - { id: testimonials,   show: true  }
+  - { id: testimonials,   show: false  }
   - { id: contact,        show: true  }
 
 # ── Social links ───────────────────────────── (leave blank to hide) ───
 social:
-  github:   "https://github.com/yourusername"
-  linkedin: "https://linkedin.com/in/yourusername"
+  github:   ""
+  linkedin: ""
   twitter:  ""
   website:  ""
+  youtube: "https://www.youtube.com/@unact1ve-kl8df"
 
 # ── About ──────────────────────────────────────────────────────────────
 # Use | for multi-line text. Indent each line by 2 spaces.
 about: |
-  I'm a portfolio-resume engineer with 5+ years of experience building products
-  that people love. I specialize in React, Node.js, and distributed systems.
-  When I'm not coding, I'm hiking trails or experimenting with new coffee
-  brewing methods.
+  I'm a System Scripter, focused on more of a backend development
+  I have experience in frontend UI scripting, but im more of a backend
+  focused scripter.
 
 
 # ── Stats ──────────────────────────────────────────────────────────────
@@ -101,10 +101,8 @@ about: |
 # Optional fields: prefix (e.g. "$") and suffix (e.g. "+" or "k").
 # Remove all entries or set show: false above to hide this section.
 stats:
-  - { label: "Years Experience", value: 5,    suffix: "+" }
-  - { label: "Projects Shipped", value: 20,   suffix: "+" }
-  - { label: "Happy Clients",    value: 50,   suffix: "+" }
-  - { label: "Cups of Coffee",   value: 1200, suffix: ""  }
+  - { label: "Years Experience", value: 3,    suffix: "+" }
+  - { label: "Not WIP Projects", value: 2,   suffix: "+" }
 
 # Examples of other combinations you can use:
 #   - { label: "Active Users",    value: 10000, suffix: "+" }
@@ -124,18 +122,14 @@ skills:
     items: [React, TypeScript, Next.js, Tailwind CSS, Framer Motion]
   - category: "Backend"
     items: [Node.js, Express, PostgreSQL, Redis, GraphQL]
-  - category: "DevOps"
-    items: [Docker, AWS, CI/CD, Kubernetes, Terraform]
-  - category: "Tools"
-    items: [Git, Figma, Jest, Storybook, Datadog]
 
 # ── Experience ─────────────────────────────────────────────────────────
 experience:
-  - company: "Acme Corp"
-    role: "Senior Full-Stack Engineer"
-    period: "2022 – Present"
+  - company: "Ordinary Tower Defense"
+    role: "Full-Stack Scripter"
+    period: "2026 – Present"
     description: |
-      Led migration of monolithic Rails app to microservices.
+      A tower defense game,
       Reduced p99 latency by 60%. Mentored a team of 4 engineers.
     highlights:
       - Microservices migration
